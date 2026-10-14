@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Iconos oficiales de Instagram y WhatsApp -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>My Dulce Candy | Pastelería</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <h1>My Dulce Candy</h1>
+      <p>Un toque dulce para tus momentos especiales</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenidos a My Dulce Candy</h2>
+        <p>Preparamos tortas y dulces para tus momentos especiales.</p>
+      </section>
+
+      <section id="productos" class="productos">
+        <h2 class="productos__titulo">Nuestros productos</h2>
+
+        <div class="productos__contenedor">
+          <article class="producto">
+            <div class="producto__imagen producto__imagen--matilda">
+              <img src="img/torta-matilda.jpeg" alt="Torta Matilda" />
+            </div>
+
+            <h3 class="producto__nombre">Torta Matilda</h3>
+            <p class="producto__descripcion">
+              Bizcochuelo de chocolate con una deliciosa crema.
+            </p>
+          </article>
+
+          <article class="producto">
+            <div class="producto__imagen producto__imagen--cheesecake">
+              <img src="img/cheesecake.jpeg" alt="Cheesecake" />
+            </div>
+            <h3 class="producto__nombre">Cheesecake</h3>
+            <p class="producto__descripcion">
+              Un postre cremoso para disfrutar algo dulce.
+            </p>
+          </article>
+
+          <article class="producto">
+            <div class="producto__imagen producto__imagen--cupcakes">
+              <img src="img/cupcakes.jpeg" alt="Cupcakes" />
+            </div>
+            <h3 class="producto__nombre">Cupcakes</h3>
+            <p class="producto__descripcion">
+              Pequeñas delicias para compartir y regalar.
+            </p>
+          </article>
+
+          <article class="producto">
+            <div class="producto__imagen producto__imagen--copa-cake">
+              <img src="img/copacakes.jpeg" alt="Copa Cakes" />
+            </div>
+
+            <h3 class="producto__nombre">Copas personalizadas</h3>
+            <p class="producto__descripcion">
+              Postres en copa con decoración personalizada para ocasiones
+              especiales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resenas" class="resenas">
+        <h2 class="resenas__titulo">Lo que dicen nuestros clientes</h2>
+
+        <div class="resenas__contenedor">
+          <article class="resena">
+            <h3 class="resena__cliente">María</h3>
+            <p class="resena__estrellas">★★★★★</p>
+            <p>La torta estaba riquísima y muy linda.</p>
+          </article>
+
+          <article class="resena">
+            <h3 class="resena__cliente">Lucía</h3>
+            <p class="resena__estrellas">★★★★★</p>
+            <p>Me encantó la presentación del postre.</p>
+          </article>
+
+          <article class="resena">
+            <h3 class="resena__cliente">Sofía</h3>
+            <p class="resena__estrellas">★★★★★</p>
+            <p>Todo delicioso. Volvería a comprar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="contacto">
+        <h2 class="contacto__titulo">Hagamos algo dulce</h2>
+
+        <p class="contacto__texto">
+          ¿Querés hacer un pedido o consultar por nuestros productos? Escribinos
+          y te responderemos pronto.
+        </p>
+
+        <div class="contacto__redes">
+          <a
+            class="contacto__red-social"
+            href="https://www.instagram.com/My.dulcecandy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visitar nuestro Instagram"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+
+            <span>Instagram</span>
+          </a>
+
+          <a
+            class="contacto__red-social"
+            href="https://wa.me/1169728516"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactarnos por WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <form
+          class="contacto__formulario"
+          action="https://formspree.io/f/meaerrrq"
+          method="POST"
+        >
+          <div class="contacto__campo">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="contacto__campo">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="contacto__campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Contanos qué te gustaría pedir..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Dulce Candy</p>
+    </footer>
+  </body>
+</html>
